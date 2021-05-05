@@ -44,5 +44,15 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'rspec-rails', '~> 5.0.0'
+  gem 'factory_bot_rails', '~> 6.1'
+  gem 'database_cleaner-active_record', '~> 2.0'
+  gem 'shoulda-matchers', '~> 4.5', '>= 4.5.1'
+  gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
+  gem 'simplecov', require: false
+  gem 'faker', '~> 2.17'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
