@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Bot management', type: :system do
   it 'enables to create bot' do
     visit '/'
-    click_link 'new bot'
+    click_link 'New bot'
 
     fill_in 'Name', with: 'New bot'
 

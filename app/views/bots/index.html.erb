@@ -1,1 +1,20 @@
-<%= link_to 'New bot', new_bot_path, class: "btn btn-primary" %>
+<%= link_to 'New bot', new_bot_path, class: "btn btn-primary float-end" %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Created</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @bots.each do |bot| %>
+    <tr>
+      <th scope="row">1</th>
+      <td><%= bot.name %></td>
+      <td><%= l(bot.created_at, format: :short) %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
